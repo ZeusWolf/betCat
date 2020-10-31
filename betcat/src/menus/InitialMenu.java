@@ -6,7 +6,7 @@ import org.academiadecodigo.bootcamp.scanners.menu.MenuInputScanner;
 public class InitialMenu implements MenuInterface {
 
     private Prompt prompt;
-    private String [] options = {"Start", "Info", "Exit"};
+    private String [] options = {"Start Gambling", "Info1", "Exit"};
     private int answerIndex;
 
 <<<<<<< HEAD:betcat/src/menus/InitialMenu.java
@@ -19,10 +19,28 @@ public class InitialMenu implements MenuInterface {
         init();
     }
 
+<<<<<<< HEAD:betcat/src/menus/InitialMenu.java
     @Override
     public void init(){
+=======
+    public void initMenu(){
+        System.out.println("______      _   _____       _   \n" +
+                "| ___ \\    | | /  __ \\     | |  \n" +
+                "| |_/ / ___| |_| /  \\/ __ _| |_ \n" +
+                "| ___ \\/ _ \\ __| |    / _` | __|\n" +
+                "| |_/ /  __/ |_| \\__/\\ (_| | |_ \n" +
+                "\\____/ \\___|\\__|\\____/\\__,_|\\__|");
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+>>>>>>> main:betcat/src/Menu.java
         MenuInputScanner scanner = new MenuInputScanner(options);
-        scanner.setMessage("Welcome tho BetCat, gambling for you.");
+
+        scanner.setMessage("Welcome to BetCat, gambling for you.");
         this.answerIndex = prompt.getUserInput(scanner);
 
         verifier();
