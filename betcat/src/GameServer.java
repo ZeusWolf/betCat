@@ -1,3 +1,4 @@
+import menus.InitialMenu;
 import org.academiadecodigo.bootcamp.Prompt;
 
 import java.io.IOException;
@@ -9,42 +10,52 @@ import java.util.concurrent.Executors;
 
 public class GameServer {
 
-
     private static final int DEFAULT_PORT = 8080;
 
-    private ServerSocket gameSocket;
-    private Socket playerSocket;
-    private Vector<Player> players;
-    private Prompt prompt;
+    private ServerSocket gameServer;
     private ExecutorService service;
+    private Vector<Player> players;
 
     public GameServer() throws IOException {
-
+        gameServer = new ServerSocket(DEFAULT_PORT);
         players = new Vector<Player>();
-        service = Executors.newFixedThreadPool(4);
-        prompt = new Prompt(System.in, System.out);
+        service = Executors.newCachedThreadPool();
+
     }
 
     public static void main(String[] args) {
 
         try {
             GameServer gameServer = new GameServer();
-            gameServer.connection();
+            gameServer.gameStart();
 
-        } catch (IOException ioException) {
-            ioException.printStackTrace();
+        } catch (IOException e) {
+            System.err.println("Error opening gamer server: " + e.getMessage());
         }
 
     }
 
-    public void connection() {
-
-        try {
-            gameSocket = new ServerSocket(DEFAULT_PORT);
+    public void gameStart() {
+        while (gameServer.isBound()) {
             waitConnection();
+        }
+        //InitialMenu menu = InitialMenu();
+    }
 
-        } catch (IOException ioException) {
-            ioException.printStackTrace();
+    public void waitConnection() {
+        try {
+            Socket playerSocket = gameServer.accept();
+
+            Player player = new Player(playerSocket);
+            service.submit(player);
+
+
+            System.out.println(player.getNickname() + " connected");
+            addPlayer(player);
+            broadCast();
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -54,26 +65,11 @@ public class GameServer {
         }
     }
 
-    public void waitConnection() {
-
-        try {
-            playerSocket = gameSocket.accept();
-            Player player = new Player(playerSocket);
-            service.submit(player);
-
-            System.out.println(player.getNickname() + " connected");
-            addPlayer(player);
-            broadCast();
-
-        } catch (IOException ioException) {
-            ioException.printStackTrace();
-        }
-    }
-
     public void broadCast() {
 
         for (Player player : players) {
             player.send();
-            System.out.println("broadcast"); }
+            System.out.println("broadcast");
+        }
     }
 }

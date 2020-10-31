@@ -10,8 +10,8 @@ public class InitialMenu implements MenuInterface {
     private int answerIndex;
 
 
-    public InitialMenu(Prompt prompt){
-        this.prompt = prompt;
+    public InitialMenu(){
+        this.prompt = new Prompt(System.in, System.out);
         init();
     }
 
