@@ -32,6 +32,10 @@ public class InitialMenu implements MenuInterface {
             e.printStackTrace();
         }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ab74d0e5f90f755edaae295b5cc7e545567c2656
         MenuInputScanner scanner = new MenuInputScanner(options);
 
         scanner.setMessage("Welcome to BetCat, gambling for you.");
