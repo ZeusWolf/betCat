@@ -1,4 +1,4 @@
-public class Util {
+public class Random {
 
 
     public static final int normalRandom() {

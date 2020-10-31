@@ -1,6 +1,7 @@
 import org.academiadecodigo.bootcamp.Prompt;
 
 import java.io.IOException;
+import java.io.PrintStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Vector;
@@ -13,38 +14,24 @@ public class GameServer {
     private static final int DEFAULT_PORT = 8080;
 
     private ServerSocket gameSocket;
+
+
+
     private Socket playerSocket;
     private Vector<Player> players;
-    private Prompt prompt;
     private ExecutorService service;
+    private Prompt prompt;
 
     public GameServer() throws IOException {
-
+        gameSocket = new ServerSocket(DEFAULT_PORT);
         players = new Vector<Player>();
         service = Executors.newFixedThreadPool(4);
-        prompt = new Prompt(System.in, System.out);
-    }
-
-    public static void main(String[] args) {
-
-        try {
-            GameServer gameServer = new GameServer();
-            gameServer.connection();
-
-        } catch (IOException ioException) {
-            ioException.printStackTrace();
-        }
-
     }
 
     public void connection() {
 
-        try {
-            gameSocket = new ServerSocket(DEFAULT_PORT);
+        while (gameSocket.isBound()) {
             waitConnection();
-
-        } catch (IOException ioException) {
-            ioException.printStackTrace();
         }
     }
 
@@ -57,9 +44,11 @@ public class GameServer {
     public void waitConnection() {
 
         try {
-            playerSocket = gameSocket.accept();
+            this.playerSocket = gameSocket.accept();
             Player player = new Player(playerSocket);
-            service.submit(player);
+            //System.out.println(playerSocket);
+            ThisIsRunnable thisIsRunnable = new ThisIsRunnable(player);
+            service.submit(thisIsRunnable);
 
             System.out.println(player.getNickname() + " connected");
             addPlayer(player);
@@ -70,10 +59,26 @@ public class GameServer {
         }
     }
 
+    /*public void prompt() {
+
+        try {
+            prompt = new Prompt(playerSocket.getInputStream(), new PrintStream(playerSocket.getOutputStream()));
+        } catch (IOException ioException) {
+            ioException.printStackTrace();
+        }
+
+    }*/
+
     public void broadCast() {
 
         for (Player player : players) {
-            player.send();
-            System.out.println("broadcast"); }
+            String answer = player.sendUserQuestion();
+            player.send("The player " + player.getNickname() + " has joined!");
+        }
     }
+
+    public Socket getPlayerSocket() {
+        return playerSocket;
+    }
+
 }
