@@ -1,14 +1,10 @@
-<<<<<<< HEAD
 import org.academiadecodigo.bootcamp.InputScanner;
 import org.academiadecodigo.bootcamp.Prompt;
-
 import java.io.*;
-=======
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
->>>>>>> main
 import java.net.Socket;
 
 public class Player /*implements Runnable*/ {
@@ -19,7 +15,7 @@ public class Player /*implements Runnable*/ {
 
     private static final int CREDITS = 15;
 
-<<<<<<< HEAD
+
     private int bet;
     private String nickname = "lola";
     private Horse horse;
@@ -85,8 +81,7 @@ public class Player /*implements Runnable*/ {
     public void setBet(int bet) {
         this.bet = bet;
     }
-=======
->>>>>>> main
+
 
     public String sendUserQuestion(InputScanner inputScanner){
 
@@ -103,10 +98,9 @@ public class Player /*implements Runnable*/ {
             ioException.printStackTrace();
         }
 
-<<<<<<< HEAD
+
     }*/
-=======
-    }
+
 
 
     private BufferedReader openStreams() throws IOException {
@@ -123,5 +117,6 @@ public class Player /*implements Runnable*/ {
         return nickname;
     }
 
->>>>>>> main
+
+
 }

@@ -1,8 +1,4 @@
-import menus.InitialMenu;
-import org.academiadecodigo.bootcamp.Prompt;
-
 import java.io.IOException;
-import java.io.PrintStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Vector;
@@ -13,33 +9,6 @@ public class GameServer {
 
     private static final int DEFAULT_PORT = 8080;
 
-<<<<<<< HEAD
-    private ServerSocket gameSocket;
-
-
-
-    private Socket playerSocket;
-    private Vector<Player> players;
-    private ExecutorService service;
-    private Prompt prompt;
-
-    public GameServer() throws IOException {
-        gameSocket = new ServerSocket(DEFAULT_PORT);
-        players = new Vector<Player>();
-        service = Executors.newFixedThreadPool(4);
-    }
-
-    public void connection() {
-
-        while (gameSocket.isBound()) {
-            waitConnection();
-        }
-    }
-
-    public void addPlayer(Player player) {
-        synchronized (players) {
-            players.add(player);
-=======
     private ServerSocket gameServer;
     private ExecutorService service;
     private Vector<Player> players;
@@ -66,19 +35,17 @@ public class GameServer {
     public void gameStart() {
         while (gameServer.isBound()) {
             waitConnection();
->>>>>>> main
         }
         //InitialMenu menu = InitialMenu();
     }
 
     public void waitConnection() {
         try {
-<<<<<<< HEAD
+
             this.playerSocket = gameSocket.accept();
-=======
+
             Socket playerSocket = gameServer.accept();
 
->>>>>>> main
             Player player = new Player(playerSocket);
             //System.out.println(playerSocket);
             ThisIsRunnable thisIsRunnable = new ThisIsRunnable(player);
@@ -113,13 +80,13 @@ public class GameServer {
     public void broadCast() {
 
         for (Player player : players) {
-<<<<<<< HEAD
+
             String answer = player.sendUserQuestion();
             player.send("The player " + player.getNickname() + " has joined!");
-=======
+
             player.send();
             System.out.println("broadcast");
->>>>>>> main
+
         }
     }
 
