@@ -9,21 +9,16 @@ public class InitialMenu implements MenuInterface {
     private String [] options = {"Start Gambling", "Info1", "Exit"};
     private int answerIndex;
 
-<<<<<<< HEAD:betcat/src/menus/InitialMenu.java
 
     public InitialMenu(Prompt prompt){
-=======
-    public Menu(Prompt prompt){
->>>>>>> main:betcat/src/Menu.java
         this.prompt = prompt;
         init();
     }
 
-<<<<<<< HEAD:betcat/src/menus/InitialMenu.java
+
     @Override
     public void init(){
-=======
-    public void initMenu(){
+
         System.out.println("______      _   _____       _   \n" +
                 "| ___ \\    | | /  __ \\     | |  \n" +
                 "| |_/ / ___| |_| /  \\/ __ _| |_ \n" +
@@ -37,7 +32,7 @@ public class InitialMenu implements MenuInterface {
             e.printStackTrace();
         }
 
->>>>>>> main:betcat/src/Menu.java
+
         MenuInputScanner scanner = new MenuInputScanner(options);
 
         scanner.setMessage("Welcome to BetCat, gambling for you.");
