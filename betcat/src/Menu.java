@@ -6,7 +6,6 @@ public class Menu {
     private Prompt prompt;
     private String [] options = {"Start", "More", "Exit"};
 
-
     public Menu(Prompt prompt){
         this.prompt = prompt;
         initMenu();
