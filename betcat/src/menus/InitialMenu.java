@@ -1,35 +1,38 @@
+package menus;
+
 import org.academiadecodigo.bootcamp.Prompt;
 import org.academiadecodigo.bootcamp.scanners.menu.MenuInputScanner;
 
-public class Menu {
+public class InitialMenu implements MenuInterface {
 
     private Prompt prompt;
     private String [] options = {"Start", "Info", "Exit"};
     private int answerIndex;
 
 
-    public Menu(Prompt prompt){
+    public InitialMenu(Prompt prompt){
         this.prompt = prompt;
-        initMenu();
+        init();
     }
 
-    public void initMenu(){
+    @Override
+    public void init(){
         MenuInputScanner scanner = new MenuInputScanner(options);
         scanner.setMessage("Welcome tho BetCat, gambling for you.");
         this.answerIndex = prompt.getUserInput(scanner);
 
-        optionVerifier();
+        verifier();
 
     }
 
-    private void optionVerifier(){
+    @Override
+    public void verifier(){
         if(options[answerIndex -1].equals("Start")){
             System.out.println("Be our guest, have fun!");
         }
 
         if(options[answerIndex-1].equals("Info")) {
-            System.out.println("Here's all the info you need to know:");
-            new More(prompt, this);
+            new InfoMenu(prompt, this);
         }
 
         if(options[answerIndex-1].equals("Exit")){
