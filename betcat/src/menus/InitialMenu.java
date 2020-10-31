@@ -9,8 +9,12 @@ public class InitialMenu implements MenuInterface {
     private String [] options = {"Start", "Info", "Exit"};
     private int answerIndex;
 
+<<<<<<< HEAD:betcat/src/menus/InitialMenu.java
 
     public InitialMenu(Prompt prompt){
+=======
+    public Menu(Prompt prompt){
+>>>>>>> main:betcat/src/Menu.java
         this.prompt = prompt;
         init();
     }
