@@ -4,24 +4,33 @@ import org.academiadecodigo.bootcamp.scanners.menu.MenuInputScanner;
 public class Menu {
 
     private Prompt prompt;
-    private String [] options = {"Start", "More", "Exit"};
+    private String [] options = {"Start", "Info", "Exit"};
+    private int answerIndex;
 
     public Menu(Prompt prompt){
         this.prompt = prompt;
         initMenu();
     }
 
-    private void initMenu(){
+    public void initMenu(){
         MenuInputScanner scanner = new MenuInputScanner(options);
         scanner.setMessage("Welcome tho BetCat, gambling for you.");
-        int answerIndex = prompt.getUserInput(scanner);
+        this.answerIndex = prompt.getUserInput(scanner);
+
+        optionVerifier();
+
+    }
+
+    private void optionVerifier(){
         if(options[answerIndex -1].equals("Start")){
             System.out.println("Be our guest, have fun!");
+        }
 
-        }
-        if(options[answerIndex-1].equals("More")) {
+        if(options[answerIndex-1].equals("Info")) {
             System.out.println("Here's all the info you need to know:");
+            new More(prompt, this);
         }
+
         if(options[answerIndex-1].equals("Exit")){
 
             try {
