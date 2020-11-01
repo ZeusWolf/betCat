@@ -46,63 +46,50 @@ public class GameServer {
         //InitialMenu menu = InitialMenu();
     }
 
-    public void waitConnection()  {
-
-
-<<<<<<< HEAD
-            Socket playerSocket = gameServer.accept();
-
-            try {
-
-                //Socket playerSocket = gameServer.accept();
-
-=======
-
+    public void waitConnection() {
 
 
         try {
             Socket playerSocket = gameServer.accept();
 
-                //Socket playerSocket = gameServer.accept();
+            //Socket playerSocket = gameServer.accept();
 
 
->>>>>>> main
-
-                this.playerSocket = gameServer.accept();
+            this.playerSocket = gameServer.accept();
 
 
-                //ThisIsRunnable thisIsRunnable = new ThisIsRunnable(playerSocket, this);
-                //service.submit(thisIsRunnable);
+            //ThisIsRunnable thisIsRunnable = new ThisIsRunnable(playerSocket, this);
+            //service.submit(thisIsRunnable);
 
-                //service.submit(new ThisIsRunnable(playerSocket, this));
+            //service.submit(new ThisIsRunnable(playerSocket, this));
 
-                //Player1 player1 = new Player1(playerSocket, this);
-                //service.submit(player1);
+            //Player1 player1 = new Player1(playerSocket, this);
+            //service.submit(player1);
 
-                service.submit(new Player1(playerSocket, this));
-
-
-                //System.out.println(thisIsRunnable.getPlayer().getNickname() + " connected");
-                //addPlayer(thisIsRunnable.getPlayer());
-                //players.add(thisIsRunnable.getPlayer());
+            service.submit(new Player1(playerSocket, this));
 
 
-                System.out.println(players);
-                System.out.println(players.size());
-                chooses();
-                broadCast();
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
+            //System.out.println(thisIsRunnable.getPlayer().getNickname() + " connected");
+            //addPlayer(thisIsRunnable.getPlayer());
+            //players.add(thisIsRunnable.getPlayer());
 
 
-    public void addPlayer(Player1 player) {
-        synchronized (players) {
-            players.add(player);
+            System.out.println(players);
+            System.out.println(players.size());
+            chooses();
+            broadCast();
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
+
+        public void addPlayer(Player1 player){
+            synchronized (players) {
+                players.add(player);
+            }
+        }
+    
 
     /*public void prompt() {
 
@@ -115,60 +102,52 @@ public class GameServer {
     }*/
 
 
-    public void chooses() {
+            public void chooses () {
 
 
-        try {
-            for (Player1 player : players) {
+                try {
+                    for (Player1 player : players) {
 
-                StringInputScanner askNickname = new StringInputScanner();
-                askNickname.setMessage("Insert your Nickname: ");
-                player.setNickname(player.getMyPrompt().getUserInput(askNickname));
+                        StringInputScanner askNickname = new StringInputScanner();
+                        askNickname.setMessage("Insert your Nickname: ");
+                        player.setNickname(player.getMyPrompt().getUserInput(askNickname));
             /*String nick = player.getMyPrompt().getUserInput(askNickname);
             player.setNickname(nick);*/
-                player.send("The player " + player.getNickname() + " has joined!");
-                System.out.println("welcome " + player.getNickname());
+                        player.send("The player " + player.getNickname() + " has joined!");
+                        System.out.println("welcome " + player.getNickname());
 
+                    }
+                } catch (ConcurrentModificationException e) {
+                    e.printStackTrace();
+                }
             }
-        } catch (ConcurrentModificationException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void broadCast() {
-
-        for (Player1 player : players) {
 
 
-<<<<<<< HEAD
-=======
+            public void broadCast () {
 
->>>>>>> main
-            player.send("The player " + player.getNickname() + " has joined!");
-
-            player.send("ola");
-            System.out.println("broadcast");
-
-<<<<<<< HEAD
-            //String answer = player.sendUserQuestion();
+                for (Player1 player : players) {
 
 
-=======
+                    player.send("The player " + player.getNickname() + " has joined!");
 
-            //String answer = player.sendUserQuestion();
+                    player.send("ola");
+                    System.out.println("broadcast");
+
+
+                    //String answer = player.sendUserQuestion();
+
+
+                    //String answer = player.sendUserQuestion();
+
+
+                }
+            }
 
 
 
->>>>>>> main
-
-        }
-    }
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> main
    /* public Socket getPlayerSocket() {
 
     /*public Socket getPlayerSocket() {
@@ -176,4 +155,4 @@ public class GameServer {
         return playerSocket;
     }*/
 
-}
+        }
