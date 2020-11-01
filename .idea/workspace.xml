@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+<<<<<<< HEAD
+  <component name="ChangeListManager">
+    <list default="true" id="05460547-fa48-4add-b376-2956f1111fde" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/betcat/src/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/betcat/src/Field.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/betcat/src/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/betcat/src/GameLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/betcat/src/GameServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/betcat/src/Horse.java" beforeDir="false" afterPath="$PROJECT_DIR$/betcat/src/Horse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/betcat/src/Lane.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/betcat/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/betcat/src/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/betcat/src/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/betCat/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/betCat/Horse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/betCat/Horse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/betCat/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/betCat/Main.class" afterDir="false" />
+=======
+<<<<<<< HEAD
+  <component name="ChangeListManager">
+    <list default="true" id="91d41a10-2daa-485c-b3ab-c41d1658b83c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/betcat/out/production/betcat/MenuInterface.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/betcat/out/production/betcat/More.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/betcat/src/MenuInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/betcat/src/More.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/betcat/out/production/betcat/GameServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/betcat/out/production/betcat/GameServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/betcat/out/production/betcat/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/betcat/out/production/betcat/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/betcat/src/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/betcat/src/GameServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/betcat/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/betcat/src/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/betCat/GameServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/betCat/GameServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/betCat/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/betCat/Menu.class" afterDir="false" />
+=======
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4424af20-0cd9-45d6-b5d6-cef967d32a75" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> main
+>>>>>>> 94bbac5aa4463612669021269d86a69fc5d3394a
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+<<<<<<< HEAD
+  <component name="ProjectId" id="1jgp8H7pRiF4PJu0Mr1bOGz9u3t" />
+  <component name="ProjectViewState">
+=======
+<<<<<<< HEAD
+  <component name="ProjectId" id="1je3h8zX5C3MsbsGxY8oXa9fOA3" />
+=======
+  <component name="ProjectId" id="1jeEVYxowlem34px1zUlmzkPOoJ" />
+>>>>>>> main
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+>>>>>>> 94bbac5aa4463612669021269d86a69fc5d3394a
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+<<<<<<< HEAD
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+=======
+<<<<<<< HEAD
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="GameServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GameServer" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/betcat" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ricar\Desktop\Workspace\GitHub\betCat\lib" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+>>>>>>> main
+>>>>>>> 94bbac5aa4463612669021269d86a69fc5d3394a
+      <module name="betCat" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 94bbac5aa4463612669021269d86a69fc5d3394a
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+<<<<<<< HEAD
+        <item itemvalue="Application.Main" />
+=======
+        <item itemvalue="Application.GameServer" />
+=======
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+>>>>>>> main
+>>>>>>> 94bbac5aa4463612669021269d86a69fc5d3394a
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
+      <changelist id="05460547-fa48-4add-b376-2956f1111fde" name="Default Changelist" comment="" />
+      <created>1604235430343</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604235430343</updated>
+      <workItem from="1604235433831" duration="2599000" />
+      <workItem from="1604241698094" duration="3213000" />
+=======
+<<<<<<< HEAD
+      <changelist id="91d41a10-2daa-485c-b3ab-c41d1658b83c" name="Default Changelist" comment="" />
+      <created>1604150847664</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604150847664</updated>
+      <workItem from="1604150849808" duration="9415000" />
+      <workItem from="1604162726001" duration="149000" />
+>>>>>>> 94bbac5aa4463612669021269d86a69fc5d3394a
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+<<<<<<< HEAD
+=======
+  <component name="WindowStateProjectService">
+    <state width="1878" height="264" key="GridCell.Tab.0.bottom" timestamp="1604162874584">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1878" height="264" key="GridCell.Tab.0.bottom/0.23.1920.977@0.23.1920.977" timestamp="1604162874584" />
+    <state width="1878" height="264" key="GridCell.Tab.0.center" timestamp="1604162874584">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1878" height="264" key="GridCell.Tab.0.center/0.23.1920.977@0.23.1920.977" timestamp="1604162874584" />
+    <state width="1878" height="264" key="GridCell.Tab.0.left" timestamp="1604162874584">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1878" height="264" key="GridCell.Tab.0.left/0.23.1920.977@0.23.1920.977" timestamp="1604162874584" />
+    <state width="1878" height="264" key="GridCell.Tab.0.right" timestamp="1604162874584">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1878" height="264" key="GridCell.Tab.0.right/0.23.1920.977@0.23.1920.977" timestamp="1604162874584" />
+    <state width="1878" height="264" key="GridCell.Tab.1.bottom" timestamp="1604162450655">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1878" height="264" key="GridCell.Tab.1.bottom/0.23.1920.977@0.23.1920.977" timestamp="1604162450655" />
+    <state width="1878" height="264" key="GridCell.Tab.1.center" timestamp="1604162450655">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1878" height="264" key="GridCell.Tab.1.center/0.23.1920.977@0.23.1920.977" timestamp="1604162450655" />
+    <state width="1878" height="264" key="GridCell.Tab.1.left" timestamp="1604162450654">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1878" height="264" key="GridCell.Tab.1.left/0.23.1920.977@0.23.1920.977" timestamp="1604162450654" />
+    <state width="1878" height="264" key="GridCell.Tab.1.right" timestamp="1604162450655">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1878" height="264" key="GridCell.Tab.1.right/0.23.1920.977@0.23.1920.977" timestamp="1604162450655" />
+    <state x="625" y="238" width="670" height="676" key="search.everywhere.popup" timestamp="1604153233846">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="625" y="238" width="670" height="676" key="search.everywhere.popup/0.23.1920.977@0.23.1920.977" timestamp="1604153233846" />
+=======
+      <changelist id="4424af20-0cd9-45d6-b5d6-cef967d32a75" name="Default Changelist" comment="" />
+      <created>1604156182050</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604156182050</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="114" key="#Project_Structure" timestamp="1604164157473">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="440" y="114" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1604164157473" />
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1604165718111">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1604165718111" />
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1604163722642">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1604163722642" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1604163722642">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1604163722642" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1604163722642">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1604163722642" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1604163722642">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1604163722642" />
+>>>>>>> main
+  </component>
+>>>>>>> 94bbac5aa4463612669021269d86a69fc5d3394a
+</project>
