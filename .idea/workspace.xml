@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="05460547-fa48-4add-b376-2956f1111fde" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/betcat/src/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/betcat/src/Field.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/betcat/src/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/betcat/src/GameLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/betcat/src/GameServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/betcat/src/Horse.java" beforeDir="false" afterPath="$PROJECT_DIR$/betcat/src/Horse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/betcat/src/Lane.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/betcat/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/betcat/src/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/betcat/src/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/betCat/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/betCat/Horse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/betCat/Horse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/betCat/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/betCat/Main.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jgp8H7pRiF4PJu0Mr1bOGz9u3t" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="betCat" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="05460547-fa48-4add-b376-2956f1111fde" name="Default Changelist" comment="" />
+      <created>1604235430343</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604235430343</updated>
+      <workItem from="1604235433831" duration="2599000" />
+      <workItem from="1604241698094" duration="3213000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
