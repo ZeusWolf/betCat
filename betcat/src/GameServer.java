@@ -46,15 +46,27 @@ public class GameServer {
         //InitialMenu menu = InitialMenu();
     }
 
-    public void waitConnection() {
+    public void waitConnection()  {
 
 
+<<<<<<< HEAD
             Socket playerSocket = gameServer.accept();
 
             try {
 
                 //Socket playerSocket = gameServer.accept();
 
+=======
+
+
+
+        try {
+            Socket playerSocket = gameServer.accept();
+
+                //Socket playerSocket = gameServer.accept();
+
+
+>>>>>>> main
 
                 this.playerSocket = gameServer.accept();
 
@@ -128,19 +140,35 @@ public class GameServer {
         for (Player1 player : players) {
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
             player.send("The player " + player.getNickname() + " has joined!");
 
             player.send("ola");
             System.out.println("broadcast");
 
+<<<<<<< HEAD
             //String answer = player.sendUserQuestion();
 
 
+=======
+
+            //String answer = player.sendUserQuestion();
+
+
+
+>>>>>>> main
 
         }
     }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
    /* public Socket getPlayerSocket() {
 
     /*public Socket getPlayerSocket() {

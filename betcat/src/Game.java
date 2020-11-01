@@ -13,11 +13,23 @@ public class Game {
 
     public Game(GameServer gameServer) {
 
+
+
+           this.gameServer = gameServer;
+           
+
+
+        //this.socket = gameServer.getPlayerSocket();
+
+
+
+
            this.gameServer = gameServer;
            
 
         this.gameServer = gameServer;
         //this.socket = gameServer.getPlayerSocket();
+
 
 
     }
