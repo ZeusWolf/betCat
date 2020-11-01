@@ -1,4 +1,6 @@
-public class Util {
+package Utilities;
+
+public class Random {
 
 
     public static final int normalRandom() {
