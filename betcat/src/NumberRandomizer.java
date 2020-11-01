@@ -1,4 +1,4 @@
-public class Util {
+public class NumberRandomizer {
 
 
     public static final int normalRandom() {
