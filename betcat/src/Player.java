@@ -26,11 +26,7 @@ public class Player {
     private BufferedReader reader;
     private Prompt myPrompt;
     private String message;  // feito dps
-<<<<<<< HEAD
 
-
-=======
->>>>>>> serverLogic
 
 
     public Player(Socket playerSocket) {
@@ -120,14 +116,7 @@ public class Player {
             ioException.printStackTrace();
         }
 
-
-<<<<<<< HEAD
-    }*/
-=======
-    }*//*
->>>>>>> serverLogic
+ */
 
 
-}
 
-*/
