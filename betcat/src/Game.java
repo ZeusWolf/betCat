@@ -12,13 +12,15 @@ public class Game {
     private Socket socket;
 
     public Game(GameServer gameServer) {
-<<<<<<< HEAD
+
+
            this.gameServer = gameServer;
            
-=======
-        this.gameServer = gameServer;
+
+
         //this.socket = gameServer.getPlayerSocket();
->>>>>>> serverLogic
+
+
 
     }
 

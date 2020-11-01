@@ -123,11 +123,7 @@ public class Player {
 
 <<<<<<< HEAD
     }*/
-=======
-    }*//*
->>>>>>> serverLogic
 
 
-}
 
-*/
+
