@@ -48,13 +48,13 @@ public class GameServer {
 
     public void waitConnection() {
 
-<<<<<<< HEAD
+
             Socket playerSocket = gameServer.accept();
-=======
+
             try {
 
                 //Socket playerSocket = gameServer.accept();
->>>>>>> serverLogic
+
 
                 this.playerSocket = gameServer.accept();
 
@@ -127,24 +127,24 @@ public class GameServer {
 
         for (Player1 player : players) {
 
-<<<<<<< HEAD
+
             player.send("The player " + player.getNickname() + " has joined!");
 
             player.send("ola");
             System.out.println("broadcast");
-=======
+
             //String answer = player.sendUserQuestion();
 
->>>>>>> serverLogic
+
 
         }
     }
 
-<<<<<<< HEAD
+
    /* public Socket getPlayerSocket() {
-=======
+
     /*public Socket getPlayerSocket() {
->>>>>>> serverLogic
+
         return playerSocket;
     }*/
 
