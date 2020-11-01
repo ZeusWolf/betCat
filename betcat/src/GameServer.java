@@ -1,6 +1,9 @@
+import org.academiadecodigo.bootcamp.scanners.string.StringInputScanner;
+
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ConcurrentModificationException;
 import java.util.Vector;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -9,13 +12,17 @@ public class GameServer {
 
     private static final int DEFAULT_PORT = 8080;
 
+    private Actions actions;
     private ServerSocket gameServer;
     private ExecutorService service;
-    private Vector<Player> players;
+    private Vector<Player1> players;
+
+    private Socket playerSocket;
 
     public GameServer() throws IOException {
+        actions = new Actions();
         gameServer = new ServerSocket(DEFAULT_PORT);
-        players = new Vector<Player>();
+        players = new Vector<Player1>();
         service = Executors.newCachedThreadPool();
 
     }
@@ -33,33 +40,53 @@ public class GameServer {
     }
 
     public void gameStart() {
-        while (gameServer.isBound()) {
+        while (true) {
             waitConnection();
         }
         //InitialMenu menu = InitialMenu();
     }
 
     public void waitConnection() {
-        try {
 
+<<<<<<< HEAD
             Socket playerSocket = gameServer.accept();
+=======
+            try {
 
-            Player player = new Player(playerSocket);
-            //System.out.println(playerSocket);
-            ThisIsRunnable thisIsRunnable = new ThisIsRunnable(player);
-            service.submit(thisIsRunnable);
+                //Socket playerSocket = gameServer.accept();
+>>>>>>> serverLogic
+
+                this.playerSocket = gameServer.accept();
 
 
-            System.out.println(player.getNickname() + " connected");
-            addPlayer(player);
-            broadCast();
+                //ThisIsRunnable thisIsRunnable = new ThisIsRunnable(playerSocket, this);
+                //service.submit(thisIsRunnable);
 
-        } catch (IOException e) {
-            e.printStackTrace();
+                //service.submit(new ThisIsRunnable(playerSocket, this));
+
+                //Player1 player1 = new Player1(playerSocket, this);
+                //service.submit(player1);
+
+                service.submit(new Player1(playerSocket, this));
+
+
+                //System.out.println(thisIsRunnable.getPlayer().getNickname() + " connected");
+                //addPlayer(thisIsRunnable.getPlayer());
+                //players.add(thisIsRunnable.getPlayer());
+
+
+                System.out.println(players);
+                System.out.println(players.size());
+                chooses();
+                broadCast();
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
-    }
 
-    public void addPlayer(Player player) {
+
+    public void addPlayer(Player1 player) {
         synchronized (players) {
             players.add(player);
         }
@@ -75,19 +102,49 @@ public class GameServer {
 
     }*/
 
+
+    public void chooses() {
+
+
+        try {
+            for (Player1 player : players) {
+
+                StringInputScanner askNickname = new StringInputScanner();
+                askNickname.setMessage("Insert your Nickname: ");
+                player.setNickname(player.getMyPrompt().getUserInput(askNickname));
+            /*String nick = player.getMyPrompt().getUserInput(askNickname);
+            player.setNickname(nick);*/
+                player.send("The player " + player.getNickname() + " has joined!");
+                System.out.println("welcome " + player.getNickname());
+
+            }
+        } catch (ConcurrentModificationException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void broadCast() {
 
-        for (Player player : players) {
+        for (Player1 player : players) {
 
+<<<<<<< HEAD
             player.send("The player " + player.getNickname() + " has joined!");
 
             player.send("ola");
             System.out.println("broadcast");
+=======
+            //String answer = player.sendUserQuestion();
+
+>>>>>>> serverLogic
 
         }
     }
 
+<<<<<<< HEAD
    /* public Socket getPlayerSocket() {
+=======
+    /*public Socket getPlayerSocket() {
+>>>>>>> serverLogic
         return playerSocket;
     }*/
 
