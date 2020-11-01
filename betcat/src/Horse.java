@@ -1,6 +1,3 @@
-import java.lang.reflect.Array;
-import java.util.Vector;
-
 public class Horse {
     private final String name;
     private final boolean isBoosted;
@@ -15,7 +12,7 @@ public class Horse {
         this.name = name;
         this.isBoosted = false;
         this.lane = new Lane(Field.FIELD_WIDTH);
-        this.currenPosition = Game.INITIAL_POSITION;
+        this.currenPosition = GameLogic.INITIAL_POSITION;
     }
     /*
     public int move(){

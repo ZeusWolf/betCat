@@ -1,11 +1,13 @@
-public class Game {
+import java.util.Collections;
+
+public class GameLogic {
     public static final int INITIAL_POSITION = 0;
     private final Field field;
     private Horse[] horses;
     private boolean allBetsArePlaced;
     private String winner;
 
-    public Game(){
+    public GameLogic(){
         this.field = new Field();
     }
 
@@ -19,6 +21,9 @@ public class Game {
 
         for(Horse horse: horses){
             horse.getLane().add(INITIAL_POSITION, horse.toString());
+            //Collections.fill(horse.getLane().getLane(), " ");
+            //horse.getLane().add(0, horse.toString());
+
         }
 
         allBetsArePlaced = true;
