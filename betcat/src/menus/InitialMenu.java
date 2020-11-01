@@ -6,12 +6,17 @@ import org.academiadecodigo.bootcamp.scanners.menu.MenuInputScanner;
 public class InitialMenu implements MenuInterface {
 
     private Prompt prompt;
-    private String [] options = {"Start Gambling", "Info1", "Exit"};
+    private String [] options = {"Start Gambling", "Info", "Exit"};
     private int answerIndex;
 
 
-    public InitialMenu(){
+    /*public InitialMenu(){
         this.prompt = new Prompt(System.in, System.out);
+        init();
+    }*/
+
+    public InitialMenu(Prompt prompt){
+        this.prompt = prompt;
         init();
     }
 
