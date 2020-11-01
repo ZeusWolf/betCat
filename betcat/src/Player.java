@@ -23,14 +23,9 @@ public class Player /*implements Runnable*/ {
     private PrintWriter writer;
     private BufferedReader reader;
     private Prompt myPrompt;
-
     private String message;  // feito dps
-=======
-    private Socket playerSocket;
-    private PrintWriter out;
-    private String nickname = "lola";
-    private int bet;
->>>>>>> main
+
+
 
 
     public Player(Socket playerSocket) {
@@ -41,7 +36,7 @@ public class Player /*implements Runnable*/ {
             ioException.printStackTrace();
         }
     }
-<<<<<<< HEAD
+
 
     public void openStreams() throws IOException {
         reader = new BufferedReader(new InputStreamReader(playerSocket.getInputStream()));
@@ -100,23 +95,6 @@ public class Player /*implements Runnable*/ {
 
 
     }*/
-
-
-
-    private BufferedReader openStreams() throws IOException {
-        out = new PrintWriter(playerSocket.getOutputStream(), true);
-        return new BufferedReader(new InputStreamReader(playerSocket.getInputStream()));
-
-    }
-
-    public void send() {
-        out.write("jjjjjjjjjjjj");
-    }
-
-    public String getNickname() {
-        return nickname;
-    }
-
 
 
 }

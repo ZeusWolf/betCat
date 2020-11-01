@@ -7,7 +7,7 @@ public class Test {
         GameServer gameServer = new GameServer();
         Game game = new Game(gameServer);
         game.setUser();
-        gameServer.connection();
+        gameServer.gameStart();
 
 
 

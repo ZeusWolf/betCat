@@ -42,8 +42,6 @@ public class GameServer {
     public void waitConnection() {
         try {
 
-            this.playerSocket = gameSocket.accept();
-
             Socket playerSocket = gameServer.accept();
 
             Player player = new Player(playerSocket);
@@ -81,17 +79,16 @@ public class GameServer {
 
         for (Player player : players) {
 
-            String answer = player.sendUserQuestion();
             player.send("The player " + player.getNickname() + " has joined!");
 
-            player.send();
+            player.send("ola");
             System.out.println("broadcast");
 
         }
     }
 
-    public Socket getPlayerSocket() {
+   /* public Socket getPlayerSocket() {
         return playerSocket;
-    }
+    }*/
 
 }
