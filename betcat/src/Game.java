@@ -1,40 +1,43 @@
 import org.academiadecodigo.bootcamp.Prompt;
 
-import java.net.Socket;
+import java.io.IOException;
+import java.util.Scanner;
 
 public class Game {
 
-    private Player1 player;
-    private Socket playerSocket;
-    private Horse horse;
+    private ClientConnection connection;
+    private GameLogic gameLogic;
+    private ServerTry server;
     private Prompt prompt;
-    private GameServer gameServer;
-    private Socket socket;
+    private int totalBets;
 
-    public Game(GameServer gameServer) {
-
-
-
-           this.gameServer = gameServer;
-           
-
-
-        //this.socket = gameServer.getPlayerSocket();
-
-
-
-
-           this.gameServer = gameServer;
-           
-
-        this.gameServer = gameServer;
-        //this.socket = gameServer.getPlayerSocket();
-
-
-
+    public Game(ServerTry server, ClientConnection connection) {
+        this.server = server;
+        this.connection = connection;
+        this.gameLogic = new GameLogic(connection, server);
     }
 
+    public synchronized void gameStart() {
 
+        while (connection.getCredits() > 0) {
+            connection.playerHorse();
+            connection.send("\n");
+            connection.getBetFromUser();
+            connection.setCredits(connection.getCredits() - connection.getBet());
+            gameLogic.start();
+
+            if (connection.getCredits() == 0) {
+
+                connection.send("You ran out of credits!");
+
+                try {
+                    connection.openStreams().close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
 }
 
 
